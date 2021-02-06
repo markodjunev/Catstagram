@@ -5937,11 +5937,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\source\\repos\\Catstagram.Server\\Catstagram.Server\\Catstagram.Server.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Documents\\GitHub\\Catstagram\\Server\\Catstagram.Server\\Catstagram.Server\\Catstagram.Server.csproj",
       "projectName": "Catstagram.Server",
-      "projectPath": "C:\\Users\\User\\source\\repos\\Catstagram.Server\\Catstagram.Server\\Catstagram.Server.csproj",
+      "projectPath": "C:\\Users\\User\\Documents\\GitHub\\Catstagram\\Server\\Catstagram.Server\\Catstagram.Server\\Catstagram.Server.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\source\\repos\\Catstagram.Server\\Catstagram.Server\\obj\\",
+      "outputPath": "C:\\Users\\User\\Documents\\GitHub\\Catstagram\\Server\\Catstagram.Server\\Catstagram.Server\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
