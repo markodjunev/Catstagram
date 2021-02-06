@@ -120,7 +120,6 @@ C:\Users\User\Documents\GitHub\Catstagram\Server\Catstagram.Server\Catstagram.Se
 C:\Users\User\Documents\GitHub\Catstagram\Server\Catstagram.Server\Catstagram.Server\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\User\Documents\GitHub\Catstagram\Server\Catstagram.Server\Catstagram.Server\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 C:\Users\User\Documents\GitHub\Catstagram\Server\Catstagram.Server\Catstagram.Server\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-C:\Users\User\Documents\GitHub\Catstagram\Server\Catstagram.Server\Catstagram.Server\obj\Debug\netcoreapp3.1\Catstagram.Server.csprojAssemblyReference.cache
 C:\Users\User\Documents\GitHub\Catstagram\Server\Catstagram.Server\Catstagram.Server\obj\Debug\netcoreapp3.1\Catstagram.Server.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\User\Documents\GitHub\Catstagram\Server\Catstagram.Server\Catstagram.Server\obj\Debug\netcoreapp3.1\Catstagram.Server.AssemblyInfoInputs.cache
 C:\Users\User\Documents\GitHub\Catstagram\Server\Catstagram.Server\Catstagram.Server\obj\Debug\netcoreapp3.1\Catstagram.Server.AssemblyInfo.cs
