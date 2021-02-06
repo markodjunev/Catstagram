@@ -21,7 +21,9 @@ registerForm: FormGroup;
   }
 
   register(){
-    this.authService.register(this.registerForm.value);
+    this.authService.register(this.registerForm.value).subscribe(data => {
+      console.log(data);
+    });
   }
 
   get username() {
