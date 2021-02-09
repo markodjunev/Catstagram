@@ -12,11 +12,11 @@ export class AuthService {
 
   constructor(private http: HttpClient) { }
 
-  login(data): Observable<any>{
+  login(data): Observable<any> {
     return this.http.post(this.loginPath, data);
   }
 
-  register(data): Observable<any>{
+  register(data): Observable<any> {
     return this.http.post(this.registerPath, data);
   }
 
@@ -26,5 +26,12 @@ export class AuthService {
 
   getToken() {
     return localStorage.getItem('token');
+  }
+
+  isAuthenticated() {
+    if (this.getToken()) {
+      return true
+    }
+    return false;
   }
 }
