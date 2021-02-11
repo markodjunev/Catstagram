@@ -1,4 +1,4 @@
-﻿namespace Catstagram.Server.Infrastructure
+﻿namespace Catstagram.Server.Infrastructure.Extensions
 {
     using Catstagram.Server.Data;
     using Microsoft.AspNetCore.Builder;

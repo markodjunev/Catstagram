@@ -1,7 +1,7 @@
 ﻿namespace Catstagram.Server.Features.Cats
 {
-    using Catstagram.Server.Infrastructure;
-    using Microsoft.AspNetCore.Authorization;
+    using Catstagram.Server.Features.Cats.Models;
+    using Catstagram.Server.Infrastructure.Extensions;
     using Microsoft.AspNetCore.Mvc;
     using System.Collections.Generic;
     using System.Threading.Tasks;
@@ -15,7 +15,6 @@
             this.catsService = catsService;
         }
 
-        [Authorize]
         [HttpGet]
         public async Task<IEnumerable<CatListingServiceModel>> Mine()
         {
@@ -26,7 +25,6 @@
             return cats;
         }
 
-        [Authorize]
         [HttpPost]
         public async Task<ActionResult> Create(CreateCatRequestModel model)
         {
@@ -35,6 +33,45 @@
             var id = await this.catsService.CreateAsync(model.Description, model.ImageUrl, userId);
 
             return Created(nameof(this.Create), id);
+        }
+
+        [HttpGet]
+        [Route("{id}")]
+        public async Task<CatDetailsServiceModel> Details(int id)
+            => await this.catsService.Details(id);
+
+        [HttpPut]
+        [Route("{id}")]
+        public async Task<ActionResult> Update(int id, UpdateCatRequestModel model)
+        {
+            var userId = this.User.GetId();
+
+            var result = await this.catsService.Update(
+                id,
+                model.Description,
+                userId);
+
+            if (!result)
+            {
+                return BadRequest();
+            }
+
+            return Ok();
+        }
+
+        [HttpDelete]
+        [Route("{id}")]
+        public async Task<ActionResult> Delete(int id)
+        {
+            var userId = this.User.GetId();
+
+            var result = await this.catsService.Delete(id, userId);
+            if (!result)
+            {
+                return BadRequest();
+            }
+
+            return Ok();
         }
     }
 }
