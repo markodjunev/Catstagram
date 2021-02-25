@@ -1,0 +1,36 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-4">
+
+        </div>
+        <div class="col-lg-4">
+            <form [formGroup]="loginForm" (ngSubmit)="login()">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Username</label>
+                  <input type="text" class="form-control" formControlName="username">
+                </div>
+                <div class="text-center">
+                  <span *ngIf="username.touched && username.errors?.required" class="text-danger">
+                    This field Username is required.
+                  </span>
+                </div>
+                <div class="form-group">
+                  <label for="exampleInputPassword1">Password</label>
+                  <input type="password" class="form-control" formControlName="password">
+                </div>
+                <div class="text-center">
+                  <span *ngIf="password.touched && password.errors?.required" class="text-danger">
+                    This field Password is required.
+                  </span>
+                </div>
+                <hr>
+                <div class="text-center">
+                  <button type="submit" class="btn btn-primary">Login</button>
+                </div>
+              </form>
+        </div>
+        <div class="col-lg-4">
+            
+        </div>
+    </div>
+  </div>
